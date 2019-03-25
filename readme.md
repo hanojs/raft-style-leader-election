@@ -1,5 +1,9 @@
 ## Raft-Style Leader Election 
 
+This is a leader-election saubprotocol loosely based on [this](https://raft.github.io/raft.pdf) raft paper by "Diego Ongaro and John Ousterhout at Stanford University" 
+
+This implementation relys on at least 51% of servers to be alive; however, hung votes will be greately increased as the number of failed nodes reaches 50%. (No cleanup for failed nodes) 
+
 ### Publish.sh arguments...
 
 -c | Flag to tell if a server should imediately crash after it has been elected leader and sent out its first heartbeat
