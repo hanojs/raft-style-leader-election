@@ -1,6 +1,6 @@
-#Raft-Style Leader Election 
+## Raft-Style Leader Election 
 
-##Run the bash script with the fillowing args.
+### Publish.sh arguments...
 
 -c | Flag to tell if a server should imediately crash after it has been elected leader and sent out its first heartbeat
 
@@ -12,7 +12,7 @@
 -stdio | Flag to tell whether the output should display to stdio or to numbered files. 
 
 
-##Examples:
+### Examples:
 
 5 nodes that will crash when elected leader. Their output will be in numbered files.
 
